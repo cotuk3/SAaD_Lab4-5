@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SAaDLab4_5.DAL.Models.Customer" Collapsed="true">
+    <Position X="7.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAEAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAg=</HashCode>
+      <FileName>Models\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Models.Order" Collapsed="true">
+    <Position X="10.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAgAAAAAAAAAAAAAAAAQBABAAIAgAAAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Models.Quest" Collapsed="true">
+    <Position X="5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGCAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Models\Quest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Data.Repositories.QuestRepository" Collapsed="true">
+    <Position X="5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAgBAAAAAAAAAAAAAEAAEAAAgAAAAAgAAA=</HashCode>
+      <FileName>Data\Repositories\QuestRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Quest" />
+    </ShowAsAssociation>
+    <Lollipop Position="1.294" />
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Data.Repositories.EFUnitOfWork" Collapsed="true">
+    <Position X="7.75" Y="9.75" Width="1.5" />
+    <AssociationLine Name="QuestRepository" Type="SAaDLab4_5.DAL.Data.Repositories.QuestRepository">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.569" Y="-0.763" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="CustomerRepository" Type="SAaDLab4_5.DAL.Data.Repositories.CustomerRepository">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.872" Y="-0.795" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="OrderRepository" Type="SAaDLab4_5.DAL.Data.Repositories.OrderRepository">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.521" Y="-0.763" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAMAAIIAACAgBAAAEAAAAAAAAAAAEIAIAAAABBAAAAA=</HashCode>
+      <FileName>Data\Repositories\EFUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="QuestRepository" />
+      <Property Name="CustomerRepository" />
+      <Property Name="OrderRepository" />
+      <Property Name="QuestRoomDbContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="1.213" />
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Data.Repositories.OrderRepository" Collapsed="true">
+    <Position X="10.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAAABAAAAAAAAAAAAAEAAEAAAgAAAAAgAAA=</HashCode>
+      <FileName>Data\Repositories\OrderRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Order" />
+    </ShowAsAssociation>
+    <Lollipop Position="1.3" />
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Data.Repositories.CustomerRepository" Collapsed="true">
+    <Position X="7.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAAABAAAAAAAAAAAAAEAAEAAAgAAAAAgAAA=</HashCode>
+      <FileName>Data\Repositories\CustomerRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+    </ShowAsAssociation>
+    <Lollipop Position="1.3" />
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Data.EF.QuestRoomDbContext" Collapsed="true">
+    <Position X="7.75" Y="8.25" Width="1.5" />
+    <AssociationLine Name="OrderEntityTypeConfiguration" Type="SAaDLab4_5.DAL.Data.EF.EntityTypeConfiguration.OrderEntityTypeConfiguration">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.128" Y="0.188" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="CustomerEntityTypeConfiguration" Type="SAaDLab4_5.DAL.Data.EF.EntityTypeConfiguration.CustomerEntityTypeConfiguration">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.242" Y="0.15" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="QuestEntityTypeConfiguration" Type="SAaDLab4_5.DAL.Data.EF.EntityTypeConfiguration.QuestEntityTypeConfiguration">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.346" Y="0.206" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAQAgAAAABAAAAAAAEAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\EF\QuestRoomDbContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OrderEntityTypeConfiguration" />
+      <Property Name="CustomerEntityTypeConfiguration" />
+      <Property Name="QuestEntityTypeConfiguration" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Data.EF.EntityTypeConfiguration.QuestEntityTypeConfiguration" Collapsed="true">
+    <Position X="11.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\EF\EntityTypeConfiguration\QuestEntityTypeConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Data.EF.EntityTypeConfiguration.OrderEntityTypeConfiguration" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\EF\EntityTypeConfiguration\OrderEntityTypeConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SAaDLab4_5.DAL.Data.EF.EntityTypeConfiguration.CustomerEntityTypeConfiguration" Collapsed="true">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\EF\EntityTypeConfiguration\CustomerEntityTypeConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

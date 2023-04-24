@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SAaDLab4_5.BLL.DTO.QuestDTO" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAQAAAAAEAAAAAAQAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>DTO\QuestDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAaDLab4_5.BLL.DTO.OrderDTO" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAgAAAAQBABAAIAgAAEAAA=</HashCode>
+      <FileName>DTO\OrderDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAaDLab4_5.BLL.DTO.CustomerDTO" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAgAAAAg=</HashCode>
+      <FileName>DTO\CustomerDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAaDLab4_5.BLL.Services.MakeAnOrder" Collapsed="true">
+    <Position X="1.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAACAA=</HashCode>
+      <FileName>Services\MakeAnOrder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OrderDTO" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Bottom" Position="0.232" />
+  </Class>
+  <Class Name="SAaDLab4_5.BLL.Services.RegisterCustomer" Collapsed="true">
+    <Position X="4.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\RegisterCustomer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CustomerDTO" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Bottom" Position="0.2" />
+  </Class>
+  <Class Name="SAaDLab4_5.BLL.Services.OrderService" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAGAIAAAAAAAAAAAgAAAhAAAAAIAAAAAFCAA=</HashCode>
+      <FileName>Services\OrderService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="QuestDTO" />
+      <Property Name="OrderDTO" />
+      <Property Name="CustomerDTO" />
+      <Property Name="MapperConfig" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SAaDLab4_5.BLL.Services.MapperConfig" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Services\MapperConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAaDLab4_5.BLL.FieldValidator.CustomerValidator" Collapsed="true">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAEAAAIAAAAgAFAAAAECAAAAAEAAAAA=</HashCode>
+      <FileName>FieldValidator\CustomerValidator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FieldConstants" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SAaDLab4_5.BLL.FieldValidator.FieldConstants" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FieldValidator\FieldConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAaDLab4_5.BLL.FieldValidator.OrderValidator" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAACAACAAAYAAEABBoAAAAgAFAAAAFCAAAAAEAAAAA=</HashCode>
+      <FileName>FieldValidator\OrderValidator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FieldConstants" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FieldValidatorAPI.CommonRegularExpressionValidationPatterns">
+    <Position X="6" Y="5.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
